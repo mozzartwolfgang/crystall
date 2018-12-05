@@ -1,0 +1,53 @@
+.kiri{
+	border-right: 1px solid gray;
+	width: 15%;
+	float: left;
+	display: block;
+	height: 100%;
+}
+.kiri:after{
+	content: "";
+	clear: both;
+}
+@media only screen and (max-width: 768px){
+	
+	.kiri{
+		border-right: 1px solid grey;
+		float: left;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		-webkit-transition: 2s linear 1s;
+		transition: 0.5s;
+	}
+	.kiri div p{
+		-webkit-transition: 2s linear 1s;
+		transition: 0.5s;
+		margin-left: 10px;
+	}
+	.kiri div p:hover{
+		background-color: grey;
+		cursor: pointer;
+	}
+}
+@media only screen and (max-width: 480px){
+	
+	.kiri{
+		border-right: 1px solid grey;
+		float: left;
+		width: 100%;
+		height: auto;
+		margin: 0px;
+		-webkit-transition: 2s linear 1s;
+		transition: 0.5s;
+	}
+	.kiri div p{
+		-webkit-transition: 2s linear 1s;
+		transition: 0.5s;
+		margin-left: 10px;
+	}
+	.kiri div p:hover{
+		background-color: grey;
+		cursor: pointer;
+	}
+}

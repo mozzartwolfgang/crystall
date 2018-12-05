@@ -1,0 +1,104 @@
+
+.nav:not(#navigasi){
+	background-color: transparent;
+	padding: 5px; 
+}
+#atas{
+	display: none;
+} /* SAAT DI SCROLL KEBAWAH */
+.head-kebawah{
+	background-color: rgba(132,210,255, 0.9);
+	border-radius: 20px 20px;
+	transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  color: black;
+  }
+ .head-keatas{
+	background-color: transparent;
+	transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  }
+
+
+.brand{
+	color: white !important;
+	float: left;
+}
+.brand:after{
+	content: "";
+	clear: both;
+}
+.btn-turun{
+	float: left;
+	margin-top: 10px;
+	display: none;
+}
+.btn-turun{
+	content: "";
+	clear: both;
+}
+#navigasi li a{
+	color: white;
+}
+#navigasi li a:hover{
+	color: #eaeaea;
+	border-bottom: 1px solid white;
+}
+.dropdown-menu li {
+	background-color: white;
+} 
+.dropdown:active{
+	background-color: transparent;
+}
+.masuk, .daftar{
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 1px;
+}
+
+/* RESPONSIVE NAV */
+@media screen and (max-width: 768px){
+	.nav:not(#navigasi){
+		width: 100%;
+		position: relative;
+		background-color: rgba(132,210,255, 0.9);
+		height: 20%;
+	}
+	#brand{
+		float: left;
+		color: white;
+		font-size: 17px;
+	}
+
+	.btn-turun{
+		float: right;
+		margin : 10px;
+		display: inline-block !important;
+	}
+	.btn-naik{
+		float: right;
+		margin : 10px;
+		display: block;
+	}
+	.haha{
+		display: none;
+	}
+	#atas{
+		display: none;
+		float: right;
+		margin-top: 20px;
+	}
+
+	.masuk, .daftar{
+		margin-left: 10px;
+	}
+	.hehe{
+		display: block;
+	}
+}
